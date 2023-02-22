@@ -1,0 +1,19 @@
+@use '/src/assets/variables.scss' as v;
+
+.cards-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  &__row {
+
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+  }
+}

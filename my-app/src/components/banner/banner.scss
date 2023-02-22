@@ -1,0 +1,44 @@
+@use '/src/assets/variables.scss' as v;
+
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: v.$mobile-small) {
+    background-image: url('../../assets/images/placeholders/mobile-cover.png');
+    height: 300px;
+  }
+
+  @media screen and (min-width: v.$tablet) {
+    background-image: url('../../assets/images/placeholders/cover.png');
+    height: 450px;
+    &__title {
+      font-size: 44px;
+    }
+  }
+
+  @media screen and (min-width: v.$desktop-small) {
+    background-image: url('../../assets/images/placeholders/cover.png');
+    height: 650px;
+    &__title {
+      font-size: 64px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+}
